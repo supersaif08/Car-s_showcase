@@ -127,6 +127,11 @@ img {
   width: 300px;
   height: 300px;
 }
+.shape__smaller{
+  width: 180px;
+  height: 180px;
+  filter: blur(64px);
+}
 /*=============== HEADER & NAV ===============*/
 .header{
   width: 100%;
@@ -332,7 +337,7 @@ img {
   border-radius: 50%;
   box-shadow:0 0 12px hsl(158, 98%, 43%);
   transition: .3s;
-  animation: buutton 3s infinite;
+  animation: button 3s infinite;
 }
 
 .home .shape__big,
@@ -382,7 +387,7 @@ img {
   position: relative;
 }
 
-.about_-img{
+.about_img{
   width: 310px;
   border-radius: 5rem;
 }
@@ -418,7 +423,22 @@ img {
 }
 
 /*=============== POPULAR ===============*/
+.popular__container{
+  padding-top: 1rem;
+}
+.popular__card{
+  position: relative;
+  width: 238px;
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem 1,5rem ;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
 
+.popular__card .shape__smaller{
+
+}
 
 /* Swiper class */
 
