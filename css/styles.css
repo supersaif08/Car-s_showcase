@@ -159,7 +159,7 @@ img {
 
 .nav__logo{
   align-items: center;
-  column-gap: 25rerm;
+  column-gap: .25rem;
   font-weight: var(--font-medium);
   transition: .3s;
 }
@@ -168,7 +168,7 @@ img {
   font-size: 1.25rem;
 }
 
-.nav__logo :hover
+.nav__logo:hover
 {
   color: var(--first-color);
 }  
@@ -263,7 +263,7 @@ img {
   margin-bottom: .25rem; 
 }
 
-.home__elc{
+.home__elec{
   font-size: var(--small-font-size);
   font-weight: 400;
   color: var(--text-color);
@@ -289,7 +289,7 @@ img {
 }
 
 .home__car-name{
-  font-size: .62rem;
+  font-size: .625rem;
   font-weight: 400;
   color: var(--text-color-light);
 }
@@ -372,7 +372,7 @@ img {
   background-color: var(--first-color);
   color: var(--white-color);
   padding: 1rem 2rem;
-  border-radius: 25rem;
+  border-radius: .25rem;
   font-size: var(--normal-font-size);
   transition: .3s;
 }
@@ -391,7 +391,7 @@ img {
 
 .about_img{
   width: 310px;
-  border-radius: 5rem;
+  border-radius: .5rem;
 }
 
 .about__card{
@@ -432,7 +432,7 @@ img {
   position: relative;
   width: 238px;
   background-color: var(--container-color);
-  padding: 2rem 1.5rem 1,5rem ;
+  padding: 2rem 1.5rem 1.5rem ;
   border-radius: 1rem;
   margin-bottom: 3.5rem;
   overflow: hidden;
@@ -500,7 +500,7 @@ img {
   cursor: pointer;
 }
 
-.popular__button{
+.popular__button i{
   font-size: 1.25rem;
 }
 .popular__card:hover .popular__img{
@@ -571,7 +571,7 @@ img {
 
 .features__card-title{
   font-size: var(--h3-font-size);
-  margin-bottom: .25rrem;
+  margin-bottom: .25rem;
 }
 
 .features__card-description{
@@ -635,7 +635,7 @@ img {
   opacity: 1;
 }
 
-.featured__container{
+.featured__content{
   grid-template-columns: 228px;
   row-gap: 2.5rem;
   justify-content: center;
@@ -644,7 +644,7 @@ img {
 .featured__card{
   position: relative;
   background-color: var(--container-color);
-  padding: 2rem 15rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem;
   border-radius: 1rem;
 }
 
@@ -673,7 +673,7 @@ img {
 
 .featured__img{
   width: 180px;
-  margin: 1.5rem;
+  margin: 1.5rem 0;
   transition: .3s;
 }
 
@@ -730,7 +730,7 @@ img {
   object-position: center;
 }
 
-offer__bg{
+.offer__bg{
 position: absolute;
 top: 0;
 left: 0;
@@ -832,7 +832,7 @@ object-position: center;
   margin-bottom: 1.25rem ;
 }
 
-.footer__link{
+.footer__links{
   display:flex;
   flex-direction: column;
   row-gap: .5rem;
@@ -847,6 +847,11 @@ object-position: center;
 .footer__link:hover,
 .footer__social-link:hover{
   color: var(--title-color);
+}
+
+.footer__social{
+  display: flex;
+  column-gap: 1.5rem;
 }
 
 .footer__social-link{
@@ -912,6 +917,10 @@ object-position: center;
   }
 
   .home__car{
+    column-gap: 2rem;
+  }
+
+  .about__car{
     width: 150px;
   }
 
@@ -966,7 +975,7 @@ object-position: center;
   }
 
   .nav{
-    height: calc(var(--header-height)=1.5rem);
+    height: calc(var(--header-height)+1.5rem);
   }
   .nav__toggle,
   .nav__close{
@@ -1176,7 +1185,7 @@ object-position: center;
 
   .scrollup{
     right: 3rem;
-    
+
   }
 
 }

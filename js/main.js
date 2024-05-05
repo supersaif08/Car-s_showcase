@@ -60,7 +60,7 @@ let swiperPopular = new Swiper(".popular__container", {
   });
 
 /*=============== MIXITUP FILTER FEATURED ===============*/
-let mixerFeatured = mixitup(featured__content, {
+let mixerFeatured = mixitup('.featured__content', {
     selectors: {
         target: '.featured__card'
     },
@@ -110,11 +110,12 @@ const scrollActive = () =>{
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr =scrollReveal({
+const sr = ScrollReveal({
     origin : 'top',
     distance:'60px',
     duration:2500,
-    delay:400
+    delay:400,
+    //rest : true
 })
 
 sr.reveal('.home__title, .popular__contaiiner , .features__img, .featured__filters')
